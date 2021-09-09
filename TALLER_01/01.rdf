@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+	xmlns:admin="http://webns.net/mvcb/">
+
+<rdf:Description rdf:about="localhost">
+	<dc:title>I.A. RESPONSABLE :  EDUCACIÓN ADAPTATIVA COMO MECANISMO PARA REDUCIR LA DESERCIÓN ESCOLAR</dc:title>
+	<dc:description>Propuesta para aplicar tecnologías de inteligencia artifical en educación</dc:description>
+	<dc:subject>
+		<rdf:Bag>
+			<rdf:li>IA</rdf:li>
+			<rdf:li>education</rdf:li>
+			<rdf:li>school dropout</rdf:li>
+			<rdf:li>deserción escolar</rdf:li>
+			<rdf:li>educación</rdf:li>
+		</rdf:Bag>
+	</dc:subject>
+	<dc:language>es</dc:language>
+	<dc:creator dc:source="https://www.linkedin.com/in/manuelfernandogalindo/" rdfs:Literal="Manuel Fernando Galindo Semanate" />
+	<dc:publisher dc:source="http://www.unicauca.edu.co/" rdfs:Literal="Universidad del Cauca" />
+	<dc:license dc:source="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" rdfs:Literal="CC BY-NC-ND" />
+	<dcterms:Created><dcterms:W3CDTF><rdf:value>2021-09-09</rdf:value></dcterms:W3CDTF></dcterms:Created>
+	<dc:type rdfs:value="http://purl.org/dc/dcmitype/Text" />
+	<dc:relation dc:source="https://www.wto.org/spanish/thewto_s/coher_s/mdg_s/mdgs_s.htm" rdfs:Literal="Objetivos de Desarrollo del Milenio de las Naciones Unidas" />
+	<dc:relation dc:source="https://www.redalyc.org/pdf/461/46132134004.pdf" rdfs:Literal="Consecuencias de la deserción escolar en el bachillerato: caso Universidad Autonóma de Sinaloa" />
+	<admin:generatorAgent rdf:resource="http://www.webposible.com/utilidades/dublincore-metadata-gen/" />
+</rdf:Description>
+</rdf:RDF>
