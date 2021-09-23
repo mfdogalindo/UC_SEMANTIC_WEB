@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE devices SYSTEM "./devices.dtd">
+<devices>
+  <device>
+    <identification>
+      <uuid version="4">fc19db85-ef60-4f1f-ad61-97ab5d2ffa1a</uuid>
+      <ip version="4">10.10.0.123</ip>
+      <user type="email">manuelgalindo@example.edu</user>
+    </identification>
+
+    <sensor type="accelerometer" dimensions="3" resolution="16" unit="m/s^2">
+      <sample timestamp="1632437191">
+        <data dimension="1">0x00</data>
+        <data dimension="2">0x03</data>
+        <data dimension="3">0x0F</data>
+      </sample>
+      <sample timestamp="1632437194">
+        <data dimension="1">0x00</data>
+        <data dimension="2">0x03</data>
+        <data dimension="3">0x0F</data>
+      </sample>
+    </sensor>
+
+    <sensor type="gyroscope" dimensions="3" resolution="16" unit="°/s">
+      <sample timestamp="1632437191">
+        <data dimension="1">0x00</data>
+        <data dimension="2">0x03</data>
+        <data dimension="3">0x0F</data>
+      </sample>
+    </sensor>
+
+    <sensor type="thermal" dimensions="1" resolution="12" signed="false" unit="°C">
+      <sample timestamp="1632437191">
+        <data dimension="1">0x00</data>
+      </sample>
+    </sensor>
+
+    <sensor type="thermal" dimensions="1" resolution="16" signed="false" unit="°C"></sensor>
+
+  </device>
+
+  <device>
+    <identification>
+      <uuid version="4">d0e4cb91-5191-44d4-a943-02ef25a82310</uuid>
+      <user type="email">manuelgalindo@example.edu</user>
+      <location>
+        <latitude>0</latitude>
+        <longitude>0</longitude>
+      </location>
+    </identification>
+
+    <sensor type="thermal" dimensions="1" resolution="12" signed="false" unit="°C">
+      <sample timestamp="1632437202">
+        <data dimension="1">0xFA</data>
+      </sample>
+    </sensor>
+  </device>
+</devices>
