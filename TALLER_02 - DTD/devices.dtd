@@ -1,0 +1,26 @@
+<!ELEMENT devices (device+)>
+<!ELEMENT device (identification, sensor+)>
+<!ELEMENT identification (uuid, ip?, user, location?)>
+<!ELEMENT uuid (#PCDATA)>
+<!ATTLIST uuid version (1 | 4) #REQUIRED>
+<!ELEMENT ip (#PCDATA)>
+<!ATTLIST ip version (4 | 6) #REQUIRED>
+<!ELEMENT user (#PCDATA)>
+<!ATTLIST user type (email | uuid) #REQUIRED>
+<!ELEMENT sensor (data*)>
+<!ATTLIST sensor
+    type CDATA #REQUIRED
+    dimensions (1 | 2 | 3) #REQUIRED
+    resolution CDATA #REQUIRED
+    signed (true | false) "true"
+    unit CDATA #REQUIRED
+>
+<!ELEMENT location (latitude, longitude, altutide?)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT altutide (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ATTLIST data
+    timestamp CDATA #REQUIRED
+    dimension CDATA #REQUIRED
+>
