@@ -9,20 +9,33 @@
     </identification>
 
     <sensor type="accelerometer" dimensions="3" resolution="16" unit="m/s^2">
-      <data timestamp="1632437191" dimension="1">0x00</data>
-      <data timestamp="1632437191" dimension="2">0x03</data>
-      <data timestamp="1632437191" dimension="3">0x0F</data>
+      <sample timestamp="1632437191">
+        <data dimension="1">0x00</data>
+        <data dimension="2">0x03</data>
+        <data dimension="3">0x0F</data>
+      </sample>
+      <sample timestamp="1632437194">
+        <data dimension="1">0x00</data>
+        <data dimension="2">0x03</data>
+        <data dimension="3">0x0F</data>
+      </sample>
     </sensor>
 
     <sensor type="gyroscope" dimensions="3" resolution="16" unit="°/s">
-      <data timestamp="1632437191" dimension="1">0x00</data>
-      <data timestamp="1632437191" dimension="2">0x03</data>
-      <data timestamp="1632437191" dimension="3">0x0F</data>
+      <sample timestamp="1632437191">
+        <data dimension="1">0x00</data>
+        <data dimension="2">0x03</data>
+        <data dimension="3">0x0F</data>
+      </sample>
     </sensor>
 
     <sensor type="thermal" dimensions="1" resolution="12" signed="false" unit="°C">
-      <data timestamp="1632437191" dimension="1">0x00</data>
+      <sample timestamp="1632437191">
+        <data dimension="1">0x00</data>
+      </sample>
     </sensor>
+
+    <sensor type="thermal" dimensions="1" resolution="16" signed="false" unit="°C"></sensor>
 
   </device>
 
@@ -37,7 +50,9 @@
     </identification>
 
     <sensor type="thermal" dimensions="1" resolution="12" signed="false" unit="°C">
-      <data timestamp="1632437202" dimension="1">0xFA</data>
+      <sample timestamp="1632437202">
+        <data dimension="1">0xFA</data>
+      </sample>
     </sensor>
   </device>
 </devices>

@@ -7,7 +7,13 @@
 <!ATTLIST ip version (4 | 6) #REQUIRED>
 <!ELEMENT user (#PCDATA)>
 <!ATTLIST user type (email | uuid) #REQUIRED>
-<!ELEMENT sensor (data*)>
+<!ELEMENT location (latitude, longitude, altutide?)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT altutide (#PCDATA)>
+<!ELEMENT sensor (sample*)>
+<!ATTLIST sample timestamp CDATA #REQUIRED>
+<!ELEMENT sample (data+)>
 <!ATTLIST sensor
     type CDATA #REQUIRED
     dimensions (1 | 2 | 3) #REQUIRED
@@ -15,12 +21,6 @@
     signed (true | false) "true"
     unit CDATA #REQUIRED
 >
-<!ELEMENT location (latitude, longitude, altutide?)>
-<!ELEMENT latitude (#PCDATA)>
-<!ELEMENT longitude (#PCDATA)>
-<!ELEMENT altutide (#PCDATA)>
 <!ELEMENT data (#PCDATA)>
-<!ATTLIST data
-    timestamp CDATA #REQUIRED
-    dimension CDATA #REQUIRED
->
+<!ATTLIST data dimension (1 | 2 | 3) #REQUIRED>
+<!ATTLIST data dimension (1 | 2 | 3) #REQUIRED>
