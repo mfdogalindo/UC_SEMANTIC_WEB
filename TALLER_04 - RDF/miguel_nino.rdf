@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+  xmlns:contact="https://raw.githubusercontent.com/mfdogalindo/UC_SEMANTIC_WEB/feature/TALLER_04%20-%20RDF/contact.rdf" 
+  xmlns:loc="http://simile.mit.edu/2005/05/ontologies/location#" 
+  xmlns:rdfs="https://raw.githubusercontent.com/mfdogalindo/UC_SEMANTIC_WEB/feature/TALLER_04%20-%20RDF/rdf-schema">
+
+  <foaf:Person rdf:about="https://github.com/mfdogalindo/UC_SEMANTIC_WEB/blob/feature/TALLER_04%20-%20RDF/miguel_nino.rdf">
+    <rdf:value>Miguel Ángel Niño Zambrano, mnzambrano@unicauca.edu.co</rdf:value>
+    <foaf:name>Miguel Ángel Niño Zambrano</foaf:name>
+    <foaf:phone rdf:resource="tel:+57-(305)-123-4567" />
+    <foaf:mbox rdf:resource="mailto:mnzambrano@unicauca.edu.co" />
+    <foaf:nick>mfgalind</foaf:nick>
+
+    <foaf:img rdf:resource="https://static-exp1.licdn.com/sc/h/244xhbkr7g40x6bsu4gi6q4ry" />
+    <foaf:workInfoHomepage rdf:resource="https://www.linkedin.com/in/mnzambrano/" />
+
+    <contact:office>
+      <contact:contactLocation>
+        <rdf:value>Universidad del Cauca</rdf:value>
+        <contact:homePage rdf:resource="http://www.unicauca.edu.co/" />
+        <contact:address>
+          <contact:Address>
+            <rdf:value>Calle 5 Nº 4-70</rdf:value>
+            <contact:city>Popayán</contact:city>
+            <contact:country>Colombia</contact:country>
+            <contact:postalCode>190501</contact:postalCode>
+            <loc:coordinates>2.4467248,-76.5984071</loc:coordinates>
+          </contact:Address>
+        </contact:address>
+      </contact:contactLocation>
+    </contact:office>
+
+    <foaf:knows rdf:resource="https://github.com/mfdogalindo/UC_SEMANTIC_WEB/blob/feature/TALLER_04%20-%20RDF/manuel_galindo.rdf" />
+
+  </foaf:Person>
+
+</rdf:RDF>
